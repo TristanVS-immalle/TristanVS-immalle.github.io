@@ -2,4 +2,6 @@ h1{
     color: darkcyan;
 }
 
-
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
