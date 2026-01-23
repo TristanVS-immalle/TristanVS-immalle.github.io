@@ -1,4 +1,87 @@
-body{
-    font-family: sans-serif;
-    color: darkblue;
+:root {
+    --bg-color: #ffffff;
+    --tag-bg: rgba(30, 64, 175, 0.9);
+    --tag-text: #F7957A;
+    --tag-border: rgba(59, 130, 246, 0.5);
+}
+
+#MainWebsite{
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    overflow: hidden;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #F7957A;
+}
+
+header h2 {
+    margin: 0;
+    color: rgb(30, 64, 175, 0.9);
+}
+
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    padding: 20px 0;
+    
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    animation: slide 25s linear infinite;
+}
+
+
+li {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    border: 1px solid var(--tag-border);
+    border-radius: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.05);
+    background: #2563eb;
+    cursor: pointer;
+}
+
+
+@keyframes slide {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+
+main:hover ul {
+    animation-play-state: paused;
 }
