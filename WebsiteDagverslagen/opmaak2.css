@@ -1,0 +1,22 @@
+
+#nav1{
+    scale: 70%;
+float: left;
+
+}
+
+#nav1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+aside{
+
+    float: right;
+}
+
+#Foto1{
+    float: right;
+    scale: 40%;
+}

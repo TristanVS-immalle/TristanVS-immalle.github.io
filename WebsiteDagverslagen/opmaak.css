@@ -5,8 +5,14 @@
     --tag-border: rgba(59, 130, 246, 0.5);
 }
 
-#MainWebsite{
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+#nav1{
+    
+}
+
+#nav1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 body {
@@ -84,4 +90,10 @@ li:hover {
 
 main:hover ul {
     animation-play-state: paused;
+}
+
+footer{
+    float: right;
+    background-color: rgb(30, 64, 175, 0.9);
+
 }
