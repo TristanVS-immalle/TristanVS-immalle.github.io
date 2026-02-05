@@ -1,22 +1,58 @@
 
-#nav1{
-    scale: 70%;
-float: left;
 
+body {
+    font-family: sans-serif;
+    margin: 0;
+    color: #333;
+    background-color: #ffffff; 
 }
 
-#nav1:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-    transition: all 0.3s ease;
+
+header {
+    background-color: #005294;
+    padding: 20px;
+    color: white;
+    text-align: center;
 }
 
-aside{
 
-    float: right;
+nav {
+    background-color: #F7957A;
+    padding: 10px;
+    text-align: center;
 }
 
-#Foto1{
-    float: right;
-    scale: 40%;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    color: #005294; 
+}
+
+.knop {
+    background-color: #009FE3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer {
+    border-top: 5px solid #F7957A;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
 }
