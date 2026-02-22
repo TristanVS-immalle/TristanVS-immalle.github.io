@@ -25,9 +25,12 @@ body {
     min-height: 100vh;
     background-color: var(--bg-color);
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    overflow: hidden;
+    overflow-x: hidden; /* Aangepast naar overflow-x om scrollen op mobiel mogelijk te maken indien nodig */
 }
 
+a{
+    color: #F7957A;
+}
 
 header {
     text-align: center;
@@ -39,7 +42,6 @@ header h2 {
     margin: 0;
     color: rgb(30, 64, 175, 0.9);
 }
-
 
 main {
     width: 100%;
@@ -59,7 +61,6 @@ ul {
     width: fit-content;
     animation: slide 25s linear infinite;
 }
-
 
 li {
     flex: 0 0 auto;
@@ -81,12 +82,10 @@ li:hover {
     cursor: pointer;
 }
 
-
 @keyframes slide {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
 }
-
 
 main:hover ul {
     animation-play-state: paused;
@@ -94,6 +93,28 @@ main:hover ul {
 
 footer{
     float: right;
-    background-color: rgb(30, 64, 175, 0.9);
+    color: rgb(30, 64, 175, 0.9);
+}
 
+
+
+
+@media (max-width: 768px) {
+    body {
+        overflow-y: auto; 
+    }
+    
+    main {
+        mask-image: none;
+        -webkit-mask-image: none; 
+    }
+
+    ul {
+        animation-duration: 15s; 
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+        padding: 0 15px;
+    }
 }
